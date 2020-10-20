@@ -7,7 +7,7 @@ import os
 import csv
 
 #Path to collect data
-budget_data.csv = os.path.join('PyBank', 'Reasources','budget_data.csv')
+budget_data.csv = os.path.join("PyBank", "Resources", "budget_data.csv")
 
 #Initialize Values
 MonthCount=0
@@ -17,7 +17,7 @@ AvgChange=0
 IncreaseMonth= ""
 DecreaseMonth=""
 GreatestIncrease=0
-Greatest Decrease=0
+GreatestDecrease=0
 
 #Open and read CSV and skip header
 with open(budget_data.csv) as csv_file:

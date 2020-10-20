@@ -14,10 +14,10 @@ import os
 import csv
 
 #Read File
-HR_csv = os.path.join("Instructions", "PyBoss", "Resources", "employee_data.csv")
+HR_csv = os.path.join("Instructions", "PyBoss", "employee_data.csv")
 
 #Write File
-results=open("PyBoss/output/new_employee_data.csv","w")
+results=open("Instructions/PyBoss/Output/new_employee_data.csv", "w")
 results.write("Emp ID,First Name,Last Name,DOB,SSN,State\n")
 
 
