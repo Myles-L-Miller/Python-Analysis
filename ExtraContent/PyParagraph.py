@@ -17,7 +17,7 @@ import re
 
 #Read File
 ParagraphIndex=1
-File = open(os.path.join("PyParagraph", "Resources", f"paragraph_{ParagraphIndex}.txt"),"r")
+File = open(os.path.join("Instructions", "PyParagraph", "Resources", f"paragraph_{ParagraphIndex}.txt"),"r")
 Paragraph=File.read().replace("\n"," ").replace("  "," ")
 
 #Splitting to sentences

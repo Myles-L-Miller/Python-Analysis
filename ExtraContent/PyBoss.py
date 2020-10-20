@@ -14,7 +14,7 @@ import os
 import csv
 
 #Read File
-HR_csv = os.path.join("PyBoss", "Resources", "employee_data.csv")
+HR_csv = os.path.join("Instructions", "PyBoss", "Resources", "employee_data.csv")
 
 #Write File
 results=open("PyBoss/output/new_employee_data.csv","w")
