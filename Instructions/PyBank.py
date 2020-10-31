@@ -7,20 +7,21 @@ import os
 import csv
 
 #Path to collect data
-budget_data.csv = os.path.join("PyBank", "Resources", "budget_data.csv")
+budget_data_csv = os.path.join("PyBank", "Resources", "budget_data.csv")
 
 #Initialize Values
 MonthCount=0
 NetTotal=0
 PrevMonth=0
-AvgChange=0
+AverageChange=0
 IncreaseMonth= ""
 DecreaseMonth=""
 GreatestIncrease=0
 GreatestDecrease=0
+Change = 0
 
 #Open and read CSV and skip header
-with open(budget_data.csv) as csv_file:
+with open(budget_data_csv) as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=",")
         csv_header = next(csv_file)
 
@@ -28,7 +29,7 @@ with open(budget_data.csv) as csv_file:
         for row in csv_reader:
             MonthCount+=1
             NetTotal+=int(row[1])
-
+        
             if MonthCount>1:
                 Change=int(row[1])-PrevMonth
                 AverageChange+=Change

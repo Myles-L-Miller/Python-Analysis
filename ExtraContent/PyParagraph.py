@@ -17,8 +17,9 @@ import re
 
 #Read File
 ParagraphIndex=1
-File = open(os.path.join("Instructions", "PyParagraph", "Resources", f"paragraph_{ParagraphIndex}.txt"),"r")
+File = open(os.path.join("Instructions", "PyParagraph", "raw_data", f"paragraph_{ParagraphIndex}.txt"),"r")
 Paragraph=File.read().replace("\n"," ").replace("  "," ")
+
 
 #Splitting to sentences
 Sentences=re.split("(?<=[.!?]) +", Paragraph)
@@ -46,3 +47,6 @@ print(f"Approximate Word Count: {ApproxWCount}\n")
 print(f"Approximate Sentence Count: {ApproxSCount}\n")
 print(f"Average Letter Count: {AvWLen}\n")
 print(f"Average Sentence Length: {AvSLen}\n")
+
+
+           

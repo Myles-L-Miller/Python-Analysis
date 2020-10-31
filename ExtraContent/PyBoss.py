@@ -14,7 +14,7 @@ import os
 import csv
 
 #Read File
-HR_csv = os.path.join("Instructions", "PyBoss", "employee_data.csv")
+employee_data_csv = os.path.join("Instructions", "PyBoss", "employee_data.csv")
 
 #Write File
 results=open("Instructions/PyBoss/Output/new_employee_data.csv", "w")
@@ -76,7 +76,7 @@ us_state_abbrev = {
 }
 
 
-with open(HR_csv) as csv_file:
+with open(employee_data_csv) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=",")
     csv_header = next(csv_file)
 
